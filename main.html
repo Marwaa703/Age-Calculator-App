@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputs">
+            <div class="In">
+                <label id="lDay" for="day">Day</label> <br>
+                <input type="number" name="day" id="day" placeholder="DD"> <br>
+                <span id="dayInvaild">Must be a valid day</span>
+            </div>
+            <div class="In">
+                <label id="lMon" for="month">Month</label> <br>
+                <input type="number" name="month" id="month" placeholder="MM"> <br>
+                <span id="monInvaild">Must be a valid Month</span>
+            </div>
+            <div class="In">
+                <label id="lYear" for="year">Year</label> <br>
+                <input type="number" name="year" id="year" placeholder="YYYY"> <br>
+                <span id="yrInvaild">Must be in past</span>
+            </div>
+        </div>
+        <div class="btn">
+            <hr>
+            <input type="button" id="getRes" value="&lAarr;">
+        </div>
+
+        <div class="result">
+            <p><span id="calYr">--</span> Years </p>
+            <p><span id="calMon">--</span> Months</p>
+            <p><span id="calDay">--</span> Days</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .error-message {
+            display: none;
+            color: red;
+            font-size: 12px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="ageForm">
+            <div class="form-group">
+                <label id="lDay" for="day">Day</label>
+                <input type="number" id="day" name="day" placeholder="DD">
+                <small id="dayInvalid" class="error-message">Invalid day</small>
+            </div>
+            <div class="form-group">
+                <label id="lMon" for="month">Month</label>
+                <input type="number" id="month" name="month" placeholder="MM">
+                <small id="monInvalid" class="error-message">Invalid month</small>
+            </div>
+            <div class="form-group">
+                <label id="lYear" for="year">Year</label>
+                <input type="number" id="year" name="year" placeholder="YYYY">
+                <small id="yrInvalid" class="error-message">Invalid year</small>
+            </div>
+            <button type="button" id="getRes">Calculate Age</button>
+        </form>
+        <div id="result">
+            <p>Years: <span id="calYr"></span></p>
+            <p>Months: <span id="calMon"></span></p>
+            <p>Days: <span id="calDay"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html> -->
